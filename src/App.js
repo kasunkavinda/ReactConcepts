@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import CUseState from "./components/CHooks/CUseState/CUseState";
+import CUseEffect from "./components/CHooks/CUseEffect/CUseEffect";
+import CUseRef from "./components/CHooks/CUseRef/CUseRef";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CUseState />
+      <CUseEffect />
+      <CUseRef />
     </div>
   );
 }
